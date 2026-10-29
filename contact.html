@@ -1,0 +1,299 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#26382d">
+  <title>聯絡我們｜陸軍後勤招募專區</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+      background: #f4f5ef;
+      color: #26382d;
+      line-height: 1.8;
+    }
+
+    header {
+      background: #26382d;
+      color: white;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    header a {
+      color: white;
+      text-decoration: none;
+      margin-left: 16px;
+    }
+
+    .hero {
+      background: #dfeadd;
+      padding: 48px 7%;
+      text-align: center;
+    }
+
+    .hero p {
+      color: #647467;
+    }
+
+    .hero h1 {
+      font-size: clamp(28px, 5vw, 42px);
+      margin: 0;
+      color: #26382d;
+    }
+
+    .container {
+      width: min(680px, 90%);
+      margin: 38px auto 60px;
+    }
+
+    .form-card {
+      background: white;
+      padding: 32px;
+      border-radius: 16px;
+      box-shadow: 0 8px 28px #26382d12;
+    }
+
+    .form-card h2 {
+      margin-top: 0;
+    }
+
+    .intro {
+      color: #657568;
+      font-size: 15px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin: 18px 0 6px;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccd7cb;
+      border-radius: 8px;
+      font: inherit;
+      background: #fff;
+      color: #26382d;
+    }
+
+    input:focus, textarea:focus, select:focus {
+      outline: 2px solid #64866d;
+      border-color: #64866d;
+    }
+
+    textarea {
+      min-height: 150px;
+      resize: vertical;
+    }
+
+    .required {
+      color: #b34a30;
+    }
+
+    .hint {
+      font-size: 13px;
+      color: #657568;
+      margin-top: 5px;
+    }
+
+    .submit-btn {
+      width: 100%;
+      margin-top: 24px;
+      padding: 14px;
+      border: none;
+      border-radius: 9px;
+      background: #315b41;
+      color: white;
+      font-size: 17px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background: #1e402d;
+    }
+
+    .privacy {
+      color: #657568;
+      font-size: 13px;
+      margin-top: 18px;
+    }
+
+    .back {
+      display: inline-block;
+      margin-top: 22px;
+      color: #315b41;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    footer {
+      background: #26382d;
+      color: white;
+      text-align: center;
+      padding: 24px 7%;
+      font-size: 13px;
+    }
+
+    @media (max-width: 520px) {
+      header {
+        padding: 16px 5%;
+      }
+
+      header a {
+        margin-left: 8px;
+      }
+
+      .hero {
+        padding: 36px 5%;
+      }
+
+      .form-card {
+        padding: 22px 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <strong>陸軍後勤｜招募專區</strong>
+    <nav>
+      <a href="index.html">首頁</a>
+      <a href="about.html">單位介紹</a>
+      <a href="contact.html">聯絡我們</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>聯絡我們</h1>
+    <p>CONTACT US · 意見回饋與問題諮詢</p>
+  </section>
+
+  <main class="container">
+    <div class="form-card">
+      <h2>意見回饋表單</h2>
+
+      <p class="intro">
+        歡迎填寫以下資料，留下您的問題或建議。
+        送出後，表單內容將透過 Formspree 傳送至設定的收件信箱。
+      </p>
+
+      <!--
+        請將 YOUR_FORM_ID 換成你自己的 Formspree 表單 ID。
+        例如：https://formspree.io/f/abcdefgh
+      -->
+      <form
+        action="https://formspree.io/f/YOUR_FORM_ID"
+        method="POST">
+
+        <input
+          type="hidden"
+          name="_subject"
+          value="網站聯絡我們－意見回饋">
+
+        <!-- 防垃圾訊息欄位，正常使用者不需填寫 -->
+        <div style="position:absolute;left:-5000px"
+             aria-hidden="true">
+          <label>
+            請勿填寫此欄
+            <input type="text" name="_gotcha" tabindex="-1"
+                   autocomplete="off">
+          </label>
+        </div>
+
+        <label for="name">
+          姓名 <span class="required">*</span>
+        </label>
+        <input
+          id="name"
+          name="姓名"
+          type="text"
+          placeholder="請輸入姓名"
+          autocomplete="name"
+          maxlength="80"
+          required>
+
+        <label for="phone">
+          聯絡電話 <span class="required">*</span>
+        </label>
+        <input
+          id="phone"
+          name="電話"
+          type="tel"
+          placeholder="請輸入聯絡電話"
+          autocomplete="tel"
+          maxlength="30"
+          required>
+
+        <label for="email">
+          Email 電子郵件 <span class="required">*</span>
+        </label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="example@email.com"
+          autocomplete="email"
+          maxlength="254"
+          required>
+
+        <label for="topic">
+          聯絡主題 <span class="required">*</span>
+        </label>
+        <select id="topic" name="聯絡主題" required>
+          <option value="">請選擇主題</option>
+          <option value="招募資訊">招募資訊</option>
+          <option value="職務介紹">職務介紹</option>
+          <option value="網站建議">網站建議</option>
+          <option value="其他問題">其他問題</option>
+        </select>
+
+        <label for="message">
+          聯絡內容 <span class="required">*</span>
+        </label>
+        <textarea
+          id="message"
+          name="聯絡內容"
+          placeholder="請輸入您的問題、意見或建議..."
+          maxlength="3000"
+          required></textarea>
+
+        <p class="hint">
+          請勿填寫身分證字號、帳號密碼或其他不必要的敏感個人資料。
+        </p>
+
+        <button class="submit-btn" type="submit">
+          送出意見回饋 →
+        </button>
+
+        <p class="privacy">
+          本表單由 Formspree 處理。送出前請確認資料正確，
+          並僅提供聯絡所需的資訊。
+        </p>
+      </form>
+
+      <a class="back" href="index.html">← 返回網站首頁</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>陸軍後勤招募宣導網站｜課堂示範作品</p>
+    <p>本頁為非官方示範網站，實際招募資訊以官方公告為準。</p>
+  </footer>
+</body>
+</html>
