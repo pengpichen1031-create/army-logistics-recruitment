@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#26382d">
+  <title>陸軍後勤招募專區</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Noto Sans TC", sans-serif;
+      color: #26352b;
+      background: #f4f3ed;
+      line-height: 1.8;
+    }
+    header {
+      background: #26382d;
+      color: white;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    header a {
+      color: white;
+      text-decoration: none;
+      margin-left: 16px;
+    }
+    .hero {
+      padding: 85px 8%;
+      color: white;
+      background:
+        linear-gradient(90deg, #1d3028ee, #1d302899),
+        url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1800&q=80")
+        center/cover;
+    }
+    .hero h1 {
+      font-size: clamp(34px, 6vw, 60px);
+      line-height: 1.35;
+      margin: 10px 0;
+    }
+    .hero p { max-width: 540px; }
+    .btn {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 10px 24px;
+      background: #d6b96c;
+      color: #243329;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    section { padding: 48px 8%; }
+    h2 { font-size: 28px; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      background: white;
+      padding: 24px;
+      border-radius: 10px;
+      border-top: 4px solid #687b55;
+    }
+    .note { color: #586357; font-size: 14px; }
+    footer {
+      background: #26382d;
+      color: white;
+      padding: 25px 8%;
+      font-size: 14px;
+    }
+    footer a { color: #f0d995; }
+  </style>
+</head>
+<body>
+  <header>
+    <strong>陸軍後勤｜招募專區</strong>
+    <nav>
+      <a href="#about">認識後勤</a>
+      <a href="#jobs">職務介紹</a>
+      <a href="#contact">招募資訊</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <p>ARMY LOGISTICS · RECRUITMENT</p>
+      <h1>堅實後勤<br>成就每一分戰力</h1>
+      <p>以專業支援任務，以團隊實踐責任。
+         探索後勤領域的職涯與服務機會。</p>
+      <a class="btn" href="#jobs">探索職務 →</a>
+    </div>
+
+    <section id="about">
+      <h2>認識後勤工作</h2>
+      <p>後勤工作涵蓋物資補給、運輸、裝備維護及行政管理，
+         透過專業分工與團隊合作，提供各項任務所需的支援。</p>
+    </section>
+
+    <section id="jobs">
+      <h2>職務領域</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>🚚 運輸與補給</h3>
+          <p>認識運輸支援與物資補給相關工作。</p>
+        </article>
+        <article class="card">
+          <h3>🔧 裝備維護</h3>
+          <p>了解裝備保養及技術維修職涯。</p>
+        </article>
+        <article class="card">
+          <h3>📦 倉儲管理</h3>
+          <p>認識庫儲管理與物資行政作業。</p>
+        </article>
+      </div>
+      <p class="note">
+        以上為網站示意分類，實際職缺、報考資格及待遇
+        請以國軍官方最新公告為準。
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>了解招募與報考資訊</h2>
+      <p>請透過國軍官方招募管道確認最新資格、期程與聯絡方式。</p>
+      <a class="btn"
+         href="https://rdrc.mnd.gov.tw/"
+         target="_blank"
+         rel="noopener noreferrer">
+        前往官方招募網站 ↗
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>陸軍後勤招募宣導網站｜網頁示範版</p>
+    <p>本網站為非官方示範作品，並非國防部或陸軍後勤指揮部官方網站。</p>
+  </footer>
+</body>
+</html>
