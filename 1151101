@@ -1,0 +1,453 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#26382d">
+<title>陸軍後勤指揮部｜招募宣導專區</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+  background: #f4f5ef;
+  color: #26382d;
+  line-height: 1.8;
+}
+
+header {
+  background: #26382d;
+  color: white;
+  padding: 18px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.logo {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+nav a:hover {
+  color: #c6d6bd;
+}
+
+.hero {
+  min-height: 480px;
+  background:
+    linear-gradient(#18291bd9, #18291bba),
+    url("https://images.unsplash.com/photo-1518770660439-4636190af475?w=1600");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px 7%;
+}
+
+.hero h1 {
+  font-size: clamp(30px, 5vw, 48px);
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #e2e9df;
+}
+
+.btn {
+  display: inline-block;
+  background: #a5b994;
+  color: #203326;
+  padding: 12px 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background: white;
+}
+
+section {
+  padding: 65px 7%;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.section-title h2 {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.section-title p {
+  color: #718071;
+}
+
+.about {
+  max-width: 1050px;
+  margin: auto;
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+  max-width: 1050px;
+  margin: auto;
+}
+
+.card {
+  background: white;
+  padding: 28px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px #26382d12;
+}
+
+.card h3 {
+  color: #315b41;
+}
+
+.card p {
+  color: #647467;
+}
+
+.dark-section {
+  background: #e4eadd;
+}
+
+.contact-container {
+  max-width: 680px;
+  margin: auto;
+  background: white;
+  padding: 32px;
+  border-radius: 14px;
+  box-shadow: 0 5px 25px #26382d15;
+}
+
+label {
+  display: block;
+  margin: 16px 0 6px;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccd7cb;
+  border-radius: 7px;
+  font: inherit;
+  color: #26382d;
+}
+
+textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: 2px solid #64866d;
+}
+
+.submit-btn {
+  width: 100%;
+  margin-top: 22px;
+  padding: 14px;
+  background: #315b41;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #1e402d;
+}
+
+footer {
+  background: #26382d;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  font-size: 13px;
+}
+
+.notice {
+  color: #8b5038;
+  font-size: 13px;
+  margin-top: 15px;
+}
+
+@media(max-width:650px) {
+  header {
+    flex-direction: column;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 45px 6%;
+  }
+
+  .contact-container {
+    padding: 22px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- 網站導覽 -->
+<header>
+  <div class="logo">陸軍後勤｜招募宣導專區</div>
+
+  <nav>
+    <a href="#home">首頁</a>
+    <a href="#about">單位介紹</a>
+    <a href="#jobs">後勤職務</a>
+    <a href="#contact">聯絡我們</a>
+  </nav>
+</header>
+
+<!-- 首頁 -->
+<div class="hero" id="home">
+  <h1>堅實後勤・守護國軍</h1>
+  <p>認識國軍後勤體系，探索專業職涯發展</p>
+  <a href="#about" class="btn">認識後勤單位</a>
+</div>
+
+<!-- 單位介紹 -->
+<section id="about">
+  <div class="section-title">
+    <h2>國軍後勤部門簡介</h2>
+    <p>LOGISTICS COMMAND INTRODUCTION</p>
+  </div>
+
+  <div class="about">
+    <p>
+      後勤支援是國軍整體戰力的重要基礎。
+      國軍後勤體系依任務需求，負責各項補給、
+      裝備維護、運輸及設施支援等工作，
+      透過專業分工與資源管理，
+      維持部隊裝備及各項任務所需的支援能量。
+    </p>
+
+    <p>
+      後勤工作不僅需要專業技術，
+      也重視團隊合作、責任感與行政管理能力，
+      是國軍運作中不可或缺的一環。
+    </p>
+  </div>
+</section>
+
+<!-- 後勤職務 -->
+<section class="dark-section" id="jobs">
+  <div class="section-title">
+    <h2>後勤專業職務介紹</h2>
+    <p>了解不同後勤專業領域</p>
+  </div>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>一、補給管理</h3>
+      <p>
+        負責物資需求管理、庫存管理、
+        補給作業及相關行政業務，
+        維持各項資源的妥善運用。
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>二、裝備保修</h3>
+      <p>
+        執行裝備檢查、保養及維修管理，
+        協助維持各項裝備的正常運作。
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>三、運輸支援</h3>
+      <p>
+        配合任務需求辦理運輸調度、
+        車輛管理及相關運輸行政作業。
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>四、設施管理</h3>
+      <p>
+        辦理營區設施維護、
+        設備管理及相關工程行政支援。
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- 招募宣導 -->
+<section>
+  <div class="section-title">
+    <h2>加入後勤專業行列</h2>
+    <p>發揮專長、培養能力、共同承擔責任</p>
+  </div>
+
+  <div class="about">
+    <p>
+      國軍後勤工作涵蓋多元專業領域，
+      包含技術維修、物資管理、運輸及行政支援。
+      有興趣了解相關職務及招募資訊者，
+      歡迎透過下方聯絡表單提出問題。
+    </p>
+
+    <a href="#contact" class="btn">前往聯絡我們</a>
+  </div>
+</section>
+
+<!-- 聯絡我們 -->
+<section class="dark-section" id="contact">
+  <div class="section-title">
+    <h2>聯絡我們</h2>
+    <p>CONTACT US · 意見回饋與問題諮詢</p>
+  </div>
+
+  <div class="contact-container">
+
+    <h3>意見回饋表單</h3>
+
+    <p>
+      歡迎填寫以下資料，
+      我們將透過表單服務接收您的問題與建議。
+    </p>
+
+    <form
+      action="https://formspree.io/f/xgaazpnv"
+      method="POST">
+
+      <input
+        type="hidden"
+        name="_subject"
+        value="陸軍後勤招募網站－聯絡表單">
+
+      <!-- 防垃圾訊息 -->
+      <div style="position:absolute;left:-5000px"
+           aria-hidden="true">
+        <label>
+          請勿填寫
+          <input type="text"
+                 name="_gotcha"
+                 tabindex="-1"
+                 autocomplete="off">
+        </label>
+      </div>
+
+      <label for="name">姓名 *</label>
+      <input
+        type="text"
+        id="name"
+        name="姓名"
+        placeholder="請輸入姓名"
+        maxlength="80"
+        required>
+
+      <label for="phone">聯絡電話 *</label>
+      <input
+        type="tel"
+        id="phone"
+        name="電話"
+        placeholder="請輸入聯絡電話"
+        maxlength="30"
+        required>
+
+      <label for="email">電子郵件 *</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="請輸入 Email"
+        maxlength="254"
+        required>
+
+      <label for="topic">聯絡主題 *</label>
+      <select id="topic" name="聯絡主題" required>
+        <option value="">請選擇聯絡主題</option>
+        <option value="招募資訊">招募資訊</option>
+        <option value="單位介紹">單位介紹</option>
+        <option value="職務詢問">職務詢問</option>
+        <option value="網站建議">網站建議</option>
+        <option value="其他問題">其他問題</option>
+      </select>
+
+      <label for="message">聯絡內容 *</label>
+      <textarea
+        id="message"
+        name="聯絡內容"
+        placeholder="請輸入您的問題或建議..."
+        maxlength="3000"
+        required></textarea>
+
+      <p class="notice">
+        請勿填寫身分證字號、帳號密碼或其他敏感個人資料。
+      </p>
+
+      <button type="submit" class="submit-btn">
+        送出聯絡表單 →
+      </button>
+
+      <p class="notice">
+        本表單透過 Formspree 處理，
+        請確認已完成收件信箱驗證。
+      </p>
+
+    </form>
+  </div>
+</section>
+
+<!-- 頁尾 -->
+<footer>
+  <p>陸軍後勤招募宣導網站</p>
+  <p>本網站為非官方教學及宣導示範作品，並非國防部或陸軍後勤指揮部官方網站。</p>
+  <p>實際招募資格、職缺及相關資訊，請以國軍官方公告為準。</p>
+</footer>
+
+</body>
+</html>
