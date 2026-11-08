@@ -1,0 +1,177 @@
+ 
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="陸軍後勤指揮部招募資訊與聯絡窗口">
+  <title>陸軍後勤指揮部｜人才招募</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="#home">
+    <span class="brand-mark">陸</span>
+    <span>
+      <strong>陸軍後勤指揮部</strong>
+      <small>ARMY LOGISTICS COMMAND</small>
+    </span>
+  </a>
+  <nav>
+    <a href="#about">後勤簡介</a>
+    <a class="nav-cta" href="#contact">聯絡我們</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-content">
+    <p class="eyebrow">ARMY LOGISTICS COMMAND · RECRUITMENT</p>
+    <h1>專業後勤<br><span>成就堅實戰力</span></h1>
+    <p class="hero-copy">
+      以專業支援任務，以團隊成就使命。<br>
+      認識陸軍後勤工作，開啟你的職涯新方向。
+    </p>
+    <a class="button button-light" href="#contact">
+      立即洽詢招募資訊 →
+    </a>
+  </div>
+  <div class="hero-note">
+    <span class="note-line"></span>
+    <span>專業・責任・團隊・使命</span>
+  </div>
+</section>
+
+<section class="intro section" id="about">
+  <div class="section-kicker">01 / ABOUT LOGISTICS</div>
+
+  <div class="intro-grid">
+    <div>
+      <h2>後勤，是任務背後<br>
+        <span>最堅實的力量。</span>
+      </h2>
+    </div>
+
+    <div class="intro-text">
+      <p>
+        後勤工作涵蓋補給、保修、運輸及相關支援任務，
+        透過專業分工與團隊合作，維持裝備妥善、
+        物資供應及任務支援能量。
+      </p>
+      <p>
+        無論你具備技術專長、行政能力或服務熱忱，
+        都可以進一步了解相關職務與招募資訊。
+      </p>
+    </div>
+  </div>
+
+  <div class="feature-grid">
+    <article class="feature">
+      <span class="feature-number">01</span>
+      <h3>補給支援</h3>
+      <p>物資管理、供應與補給作業。</p>
+    </article>
+
+    <article class="feature">
+      <span class="feature-number">02</span>
+      <h3>裝備保修</h3>
+      <p>裝備維護、檢修與妥善管理。</p>
+    </article>
+
+    <article class="feature">
+      <span class="feature-number">03</span>
+      <h3>運輸支援</h3>
+      <p>運輸調度與任務所需支援。</p>
+    </article>
+  </div>
+
+  <p class="disclaimer">
+    ※ 本區為網站文案初稿，實際任務內容、職缺及資格條件，
+    請依正式公告與權責單位核定資料更新。
+  </p>
+</section>
+
+<section class="contact section" id="contact">
+  <div class="section-kicker">02 / CONTACT</div>
+
+  <div class="contact-grid">
+    <div class="contact-copy">
+      <h2>想了解更多？<br>
+        <span>歡迎與我們聯繫。</span>
+      </h2>
+      <p>
+        留下基本聯絡資料與想詢問的內容，
+        招募窗口收到後將依實際作業流程與你聯繫。
+      </p>
+      <div class="contact-hint">
+        <span class="hint-dot"></span>
+        招募諮詢・職務介紹・資格詢問
+      </div>
+    </div>
+
+    <form class="contact-form"
+      action="https://formsubmit.co/pengpichen1031@gmail.com"
+      method="POST">
+
+      <input type="hidden" name="_subject"
+        value="陸軍後勤指揮部網站招募諮詢">
+
+      <input type="hidden" name="_captcha" value="true">
+
+      <input type="hidden" name="_template" value="table">
+
+      <!-- 上線後請替換成自己的 GitHub Pages 網址 -->
+      <input type="hidden" name="_next"
+        value="https://YOUR_GITHUB_USERNAME.github.io/army-logistics-recruitment/?sent=1">
+
+      <label for="name">姓名</label>
+      <input id="name" name="姓名" type="text"
+        placeholder="請輸入姓名" required>
+
+      <label for="phone">聯絡電話</label>
+      <input id="phone" name="聯絡電話" type="tel"
+        placeholder="請輸入聯絡電話" required>
+
+      <label for="email">電子郵件</label>
+      <input id="email" name="電子郵件" type="email"
+        placeholder="請輸入電子郵件">
+
+      <label for="topic">詢問內容</label>
+      <select id="topic" name="詢問類別" required>
+        <option value="">請選擇詢問類別</option>
+        <option>招募資格與條件</option>
+        <option>職務與工作內容</option>
+        <option>招募流程</option>
+        <option>其他問題</option>
+      </select>
+
+      <label for="message">留言</label>
+      <textarea id="message" name="留言內容"
+        rows="4" placeholder="請簡述想詢問的內容"
+        required></textarea>
+
+      <p class="privacy-note">
+        請勿填寫身分證字號、健康資料、軍事機敏資訊
+        或其他不必要的個人敏感資料。
+      </p>
+
+      <button class="button button-dark" type="submit">
+        送出諮詢 →
+      </button>
+
+      <p class="form-status" id="form-status"
+        role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <span>陸軍後勤指揮部｜人才招募資訊</span>
+  <span>本網站內容及標誌請經權責單位核定後正式發布。</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
